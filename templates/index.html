@@ -1,159 +1,190 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Responsive Resume Template</title>
-  <meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="../static/css/style.css">
+    <meta charset="UTF-8">
+    <title>{{ person.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <div class="resume-wrapper">
-	<section class="profile section-padding">
-		<div class="container">
-			<div class="picture-resume-wrapper">
-        <div class="picture-resume">
-        <span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" /></span>
-        <svg version="1.1" viewBox="0 0 350 350">
-  
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
-    </filter>
-  </defs>
-  
-  
-<g filter="url(#goo)" >  
-  
-  <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
-  
-  <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
-  <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+    <section class="profile section-padding">
+        <div class="container">
+            <div class="picture-resume-wrapper">
+                <div class="picture-resume">
+                    <span><img src="{{ url_for('static', filename='img/img_sculpture.jpg') }}" alt=""/></span>
+                    <svg version="1.1" viewBox="0 0 350 350">
 
-</g>  
-</svg>
-      </div>
-         <div class="clearfix"></div>
- </div>
-      <div class="name-wrapper">
-        <h1>John <br/>Anderson</h1><!-- YOUR NAME AND LAST NAME  -->
-      </div>
-      <div class="clearfix"></div>
-      <div class="contact-info clearfix">
-      	<ul class="list-titles">
-      		<li>Call</li>
-      		<li>Mail</li>
-      		<li>Web</li>
-      		<li>Home</li>
-      	</ul>
-        <ul class="list-content ">
-        	<li>+34 123 456 789</li> <!-- YOUR PHONE NUMBER  -->
-        	<li>j.anderson@gmail.com</li> <!-- YOUR EMAIL -->
-        	<li><a href="#">janderson.com</a></li> <!-- YOUR WEBSITE  -->
-        	<li>Los Angeles, CA</li> <!-- YOUR STATE AND COUNTRY  -->
-        </ul>
-      </div>
-      <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
-      	<p><span class="bold">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod congue nisi, nec consequat quam. In consectetur faucibus turpis eget laoreet. Sed nec imperdiet purus. </p>
-      </div>
-      <div class="contact-social clearfix">
-      	<ul class="list-titles">
-      		<li>Twitter</li>
-      		<li>Dribbble</li>
-      		<li>Codepen</li>
-      	</ul>
-        <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-      		<li><a href="">@janderson</a></li> <!-- YOUR TWITTER USER  -->
-      		<li><a href="">janderson</a></li> <!-- YOUR DRIBBBLE USER  -->
-      		<li><a href="">janderson</a></li> <!-- YOUR BEHANCE USER  -->
-      	</ul>
-      </div>
-		</div>
-	</section>
-  
-  <section class="experience section-padding">
-  	<div class="container">
-  		<h3 class="experience-title">Experience</h3>
-      
-      <div class="experience-wrapper">
-      	<div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div>
-        
-        <div class="job-wrapper clearfix">
-        	<div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
-          </div>
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+                                <feColorMatrix in="blur" mode="matrix"
+                                               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm"/>
+                            </filter>
+                        </defs>
+
+
+                        <g filter="url(#goo)">
+
+                            <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130"/>
+
+                            <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7"/>
+                            <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7"/>
+
+                        </g>
+                    </svg>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="name-wrapper">
+                <h1>{{ person.first_name }} <br/>{{ person.last_name }}</h1><!-- YOUR NAME AND LAST NAME  -->
+            </div>
+            <div class="clearfix"></div>
+            <div class="contact-info clearfix">
+                <ul class="list-titles">
+                    <li>电话</li>
+                    <li>邮箱</li>
+                    <li>个人网站</li>
+                    <li>所在城市</li>
+                </ul>
+                <ul class="list-content ">
+                    <li>+86 {{ person.call }}</li> <!-- YOUR PHONE NUMBER  -->
+                    <li>{{ person.email }}</li> <!-- YOUR EMAIL -->
+                    <li><a href="http://39.103.232.195/">疫情可视化分析</a></li> <!-- YOUR WEBSITE  -->
+                    <li>{{ person.city }}</li> <!-- YOUR STATE AND COUNTRY  -->
+                </ul>
+            </div>
+            <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+                <p><span class="bold">个人描述</span> {{ person.description }}</p>
+            </div>
+            <div class="contact-social clearfix">
+                <ul class="list-titles">
+                    <li>CSDN</li>
+                    <li>Github</li>
+                    <li>Gitee</li>
+                </ul>
+                <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+                    <li><a href="https://blog.csdn.net/weixin_45874832?spm=1010.2135.3001.5343">CSDN</a></li>
+                    <!-- YOUR TWITTER USER  -->
+                    <li><a href="https://github.com/nanxin123">Github</a></li> <!-- YOUR DRIBBBLE USER  -->
+                    <li><a href="https://gitee.com/nanxin123">Gitee</a></li> <!-- YOUR BEHANCE USER  -->
+                </ul>
+            </div>
         </div>
-        
-        <div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div>
-        
-         <div class="job-wrapper clearfix">
-        	<div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>  <!-- JOB DESCRIPTION  -->
-          </div>
+    </section>
+
+    <section class="experience section-padding">
+        <div class="container">
+            <h3 class="experience-title">项目经历</h3>
+            {% for experience in person.experiences %}
+
+                <div class="experience-wrapper">
+                    {#                名称#}
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">{{ experience.name }}</div>
+                        <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                        <div class="time">{{ experience.project_name }}</div>
+                        <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                    </div>
+
+                    {#                时间#}
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">{{ experience.time }} </div> <!-- JOB TITLE  -->
+                        <div class="company-description">
+                            <p>{{ experience.project_time }}</p>  <!-- JOB DESCRIPTION  -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="experience-wrapper">
+                    {#                描述#}
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">{{ experience.description }}</div>
+                        <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                        <div class="time" style="width: 300px">{{ experience.project_description }}</div>
+                        <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                    </div>
+
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">{{ experience.skill }}</div> <!-- JOB TITLE  -->
+                        <div class="company-description">
+                            <p>{{ experience.project_skill }}</p>  <!-- JOB DESCRIPTION  -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="experience-wrapper">
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">{{ experience.design }}</div>
+                        <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                        {% for skill in  experience.project_design %}
+                            <div class="time" style="width: 750px">{{ skill }}</div>
+                        {% endfor %}
+                        <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                    </div>
+                </div>
+
+                <div class="experience-wrapper">
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">{{ experience.duty }}</div> <!-- JOB TITLE  -->
+                        <div class="company-description">
+                            {% for duty in  experience.duty_description %}
+                            <p >{{ duty }}</p>
+                        {% endfor %}
+                            <!-- JOB DESCRIPTION  -->
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+
+
+        {#    个人技能#}
+        <div class="section-wrapper clearfix">
+            <h3 class="section-title">个人技能</h3>  <!-- YOUR SET OF SKILLS  -->
+            <ul style="width: 800px">
+                {#                {% for lang, details in person.programming_languages.items() %}#}
+                {#        		<li class="skill-percentage" >{{ lang }}</li>#}
+                {#                {% endfor %}#}
+                <span>* 熟悉Java语法，多线程、集合等基础框架</span><br>
+                <span>* 对JVM原理有初步的理解，如垃圾回收机制</span><br>
+                <span>* 熟练使用Redis，熟悉备份策略，了解高并发下缓存穿透、缓存雪崩、缓存击穿解决方案</span><br>
+                <span>* 熟练使用RabbitMq消息中间件，利用MQ流量削峰，解决分布式事务</span><br>
+                <span>* 熟悉应用服务器软件Tomcat等容器配置和部署，熟悉Linux系统</span><br>
+                <span>* 熟悉使用Elasticsearch,利用Elasticsearch数据检索</span><br>
+                <span>* 熟练使用主流的关系型数据库，如MySQL</span><br>
+                <span>* 熟练掌握SpringMVC、Spring、MyBatis、SpringBoot等主流开源框架</span><br>
+                <span>* 熟悉Spring Cloud、OpenFeign、Nacos、Gateway等微服务框架</span><br>
+                <span>* 熟悉使用Docker,Git,Maven等常用工具,熟悉使用Docker容器化技术部署项目</span><br>
+                <span>* 熟悉使用Thymleaf模版引擎,对Vue前端框架有初步的了解</span><br>
+            </ul>
+
         </div>
-        
-        <div class="company-wrapper clearfix">
-      		<div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-          <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-      	</div> 
-        
-         <div class="job-wrapper clearfix">
-        	<div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
-          <div class="company-description">
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>   <!-- JOB DESCRIPTION  -->
-          </div>
-        </div>
-        
-      </div><!--Skill experience-->
-      
-      <div class="section-wrapper clearfix">
-      	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
-        	<ul>
-        		<li class="skill-percentage">HTML / HTML5</li>
-        		<li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
-        		<li class="skill-percentage">Javascript</li>
-        		<li class="skill-percentage">Jquery</li>
-        		<li class="skill-percentage">Wordpress</li>
-        		<li class="skill-percentage">Photoshop</li>
-            
-        	</ul>
-        
-      </div>
-      
-      <div class="section-wrapper clearfix">
-        <h3 class="section-title">Hobbies</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in, dignissim magna.</p> 
-      </div>
-      
-  	</div>
-  </section>
-  
-  <div class="clearfix"></div>
+
+</div>
+</section>
+
+<div class="clearfix"></div>
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script><script  src="../static/css/script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+<script src="../static/css/script.js"></script>
 
 </body>
 </html>

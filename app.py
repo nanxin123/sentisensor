@@ -11,13 +11,15 @@ import csv, re, operator
 app = Flask(__name__)
 
 person = {
-    'first_name': 'Nohossat',
-    'last_name': 'TRAORE',
+    'title': '简历',
+    'first_name': '南',
+    'last_name': '新',
     'address': '9 rue Léon Giraud · PARIS · FRANCE',
     'job': 'Web developer',
-    'tel': '0678282923',
-    'email': 'nohossat.tra@yahoo.com',
-    'description': 'Suite à une expérience internationale en développement web et dans le domaine des arts, l’impact de l’intelligence artificielle dans nos vies me surprend de jour en jour. \n Aujourd’hui, je souhaite changer de cap et comprendre les secrets que recèlent nos données. J’aimerais mettre à profit ces découvertes au service des entreprises/associations à dimension sociale.',
+    'call': '13986540189',
+    'email': '2531540573@qq.com',
+    'city': '武汉',
+    'description': '一名普通程序员.',
     'social_media': [
         {
             'link': 'https://www.facebook.com/nono',
@@ -39,27 +41,27 @@ person = {
     'img': 'img/img_nono.jpg',
     'experiences': [
         {
-            'title': 'Web Developer',
-            'company': 'AZULIK',
-            'description': 'Project manager and lead developer for several AZULIK websites.',
-            'timeframe': 'July 2018 - November 2019'
-        },
-        {
-            'title': 'Freelance Web Developer',
-            'company': 'Independant',
-            'description': 'Create Wordpress websites for small and medium companies. ',
-            'timeframe': 'February 2017 - Present'
-        },
-        {
-            'title': 'Sharepoint Intern',
-            'company': 'ALTEN',
-            'description': 'Help to manage a 600 Sharepoint sites platform (audit, migration to Sharepoint newer versions)',
-            'timeframe': 'October 2015 - October 2016'
+            'time': '参与时间',
+            'name': '项目名称',
+            'project_name': '谷粒商城',
+            'project_time': '2021.03.01 - 2021.06.18',
+            'description': '项目描述',
+            'project_description': '谷粒商城是一套B2C模式电商系统，包括前台商城和后台管理系统,销售自营给客户。后台管理系统基于SpringBoot实现，前台商城基于SpringBoot+SpringCloud实现。 后台管理系统包含商品管理、库存管理、订单管理、营销管理，用户管理，内容管理。前台商城包含首页门户，商品推荐，商品搜索，商品展示，购物车，订单流程，商品秒杀,用户认证。',
+            'skill':'涉及技术',
+            'project_skill':'Spirng、SpringMVC、SpringBoot、MyBatisPuls、Redis、MySQL、SpringCloud、RabbitMq、Elasticsearch、Thymleaf、Vue等',
+            'design':'设计技术',
+            'project_design':['1、采用分布式的项目开发模式整个项目分为：认证服务、优惠服务、会员服务、订单服务、商品服务、检索服务、购物车服务、秒杀服务、库存服务、第三方服务、人人开源框架十二个微服务。',
+                              '2、基于RabbitMq支持消息事务这一特点，在项目开发过程中使用这一特点，采用最大努力通知的	分布式事务解决方案去处理分布式事务场景，基于延时队列这一特点实现定时关单功能，以及实现	秒杀	活动高并发访问场景的流量削峰。',
+                              '3、基于Redis消息中间件，实现了购物车，接口幂等，秒杀活动等高并发访问场景的开发。',
+
+                              ],
+            'duty':'责任描述',
+            'duty_description':['1.负责后台管理系统后端开发','2.负责前台商城后端开发','3.负责部分前端代码编写','4.负责项目的部署']
         }
     ],
     'education': [
         {
-            'university': 'Paris Diderot',
+            'university': '高中',
             'degree': 'Projets informatiques et Startégies d\'entreprise (PISE)',
             'description': 'Gestion de projets IT, Audit, Programmation',
             'mention': 'Bien',
