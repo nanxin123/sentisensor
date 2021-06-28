@@ -222,7 +222,7 @@ a {
 }
 .experience .company-wrapper {
   width: 30%;
-  float: left;
+  /*float: left;*/
   text-align: left;
   padding-right: 5%;
   margin-bottom: 60px;
